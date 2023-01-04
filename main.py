@@ -11,6 +11,6 @@ if __name__ == '__main__':
     # This will call language translator function. This uses a package called deep translator.
     # Deep translator has multiple sub-packages, such as google package,
     languageTranslator.translator()
-
+# add a comment
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
