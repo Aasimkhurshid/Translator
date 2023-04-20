@@ -10,7 +10,7 @@ def print_hi(name):
 # Correct for the deployment version
 def main():
     import os
-    print('running main... ')
+
 
     # read path to image as command argument
     translatorType = input('Type one of the folowing: 1 for if you want interactive input for files translation,  2 for text translation: ')
@@ -25,32 +25,8 @@ def main():
         deploarg = True
 
     if deployinput:
-        textString = {'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar', 'armenian': 'hy',
- 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az', 'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be',
- 'bengali': 'bn', 'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca', 'cebuano': 'ceb',
- 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN', 'chinese (traditional)': 'zh-TW', 'corsican': 'co',
- 'croatian': 'hr', 'czech': 'cs', 'danish': 'da', 'dhivehi': 'dv', 'dogri': 'doi', 'dutch': 'nl', 'english': 'en',
- 'esperanto': 'eo', 'estonian': 'et', 'ewe': 'ee', 'filipino': 'tl', 'finnish': 'fi', 'french': 'fr',
- 'frisian': 'fy', 'galician': 'gl', 'georgian': 'ka', 'german': 'de', 'greek': 'el', 'guarani': 'gn', 'gujarati': 'gu',
- 'haitian creole': 'ht', 'hausa': 'ha', 'hawaiian': 'haw', 'hebrew': 'iw', 'hindi': 'hi', 'hmong': 'hmn',
- 'hungarian': 'hu', 'icelandic': 'is', 'igbo': 'ig', 'ilocano': 'ilo', 'indonesian': 'id', 'irish': 'ga',
- 'italian': 'it', 'japanese': 'ja', 'javanese': 'jw', 'kannada': 'kn', 'kazakh': 'kk', 'khmer': 'km',
- 'kinyarwanda': 'rw', 'konkani': 'gom', 'korean': 'ko', 'krio': 'kri', 'kurdish (kurmanji)': 'ku',
- 'kurdish (sorani)': 'ckb', 'kyrgyz': 'ky', 'lao': 'lo', 'latin': 'la', 'latvian': 'lv', 'lingala': 'ln',
- 'lithuanian': 'lt', 'luganda': 'lg', 'luxembourgish': 'lb', 'macedonian': 'mk', 'maithili': 'mai',
- 'malagasy': 'mg', 'malay': 'ms', 'malayalam': 'ml', 'maltese': 'mt', 'maori': 'mi', 'marathi': 'mr',
- 'meiteilon (manipuri)': 'mni-Mtei', 'mizo': 'lus', 'mongolian': 'mn', 'myanmar': 'my', 'nepali': 'ne',
- 'norwegian': 'no', 'odia (oriya)': 'or', 'oromo': 'om', 'pashto': 'ps', 'persian': 'fa', 'polish': 'pl',
- 'portuguese': 'pt', 'punjabi': 'pa', 'quechua': 'qu', 'romanian': 'ro', 'russian': 'ru', 'samoan': 'sm',
- 'sanskrit': 'sa', 'scots gaelic': 'gd', 'sepedi': 'nso', 'serbian': 'sr', 'sesotho': 'st', 'shona': 'sn',
- 'sindhi': 'sd', 'sinhala': 'si', 'slovak': 'sk', 'slovenian': 'sl', 'somali': 'so',
- 'spanish': 'es', 'sundanese': 'su', 'swahili': 'sw', 'swedish': 'sv', 'tajik': 'tg', 'tamil': 'ta',
- 'tatar': 'tt', 'telugu': 'te', 'thai': 'th', 'tigrinya': 'ti', 'tsonga': 'ts', 'turkish': 'tr', 'turkmen': 'tk',
- 'twi': 'ak', 'ukrainian': 'uk', 'urdu': 'ur', 'uyghur': 'ug', 'uzbek': 'uz', 'vietnamese': 'vi', 'welsh': 'cy',
- 'xhosa': 'xh', 'yiddish': 'yi', 'yoruba': 'yo', 'zulu': 'zu'
- }
         sourcelang = input(
-            "Hi, which language you want to translate from: Please select on of the supported languages:" + str(textString))
+            "Hi, which language you want to translate from: please select among: 'chinese (simplified)': 'zh-CN', 'japanese': 'ja', 'english': 'en' 'portuguese': 'pt','urdu': 'ur', 'hindi': 'hi':")
         print(sourcelang)
         targetlang = input("Hi, which language you want to translate to: please select among: 'chinese (simplified)': 'zh-CN', 'japanese': 'ja', 'english': 'en' 'portuguese': 'pt','urdu': 'ur', 'hindi': 'hi':")
         print(targetlang)
@@ -85,11 +61,10 @@ def main():
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # This will call language translator function. This uses a package called deep translator.
-    # Deep translator has multiple sub-packages, such as google package, deep AI and more.
+    # Deep translator has multiple sub-packages, such as google package,
     import sys
 
     print(f'#cli1# Arguments received are : {sys.argv[1:]}')
-    # Call main if you want interactive translaton service
     main()
     # deployTranslator = False
     # if deployTranslator:
@@ -97,8 +72,8 @@ if __name__ == '__main__':
     # else:
     #     filepath = '/Users/aasimkhurshid/Documents/Aasim/Datasets/SrtFiles/SrtFiles/351/5-5203.srt'
     #     filesPath = '/Users/aasimkhurshid/Documents/Aasim/Datasets/SrtFiles/SrtFiles/'
-    #     outputPath = '/Users/aasimkhurshid/Documents/Aasim/Datasets/SrtFiles/Results/ES_Results/'
-    #     targetlang = 'es'
+    #     outputPath = '/Users/aasimkhurshid/Documents/Aasim/Datasets/SrtFiles/Results/'
+    #     targetlang = 'pt'
     #     languageTranslator.translateFromFile(filesPath, outputPath, targetlang)
 # add a comment
 
