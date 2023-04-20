@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Langugage Translator for SRT files
 The project is for language translation.
 It has two modes:
@@ -28,5 +28,5 @@ docker run translator
 ## Language tag: Listed to choose among several languages (source language in which text will be entered)
 ## language tag: Listed to choose among several languages (target language in which text translation is required)
 ## Text: text that needs to be translated -->
->>>>>>> origin/development
+
 
