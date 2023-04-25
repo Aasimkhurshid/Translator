@@ -5,7 +5,7 @@ It has two modes:
 1. Interactive Language translation    
 2. Non-interactive.
 
-# (Usage - Command line: )
+# (Usage 01 - Command line: )
 1. Install requirements.txt using pip install -r requirements.txt
 2. Run python main.py
 
@@ -25,5 +25,6 @@ This requires that you have docker in your system.
 docker run translator
 
 Copyright: we use pre-trained model of deep-translator which is open-source under the MIT License.
+
 
 
